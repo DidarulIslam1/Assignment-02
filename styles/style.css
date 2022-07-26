@@ -1,0 +1,171 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-part {
+    justify-content: center;
+}
+
+/*-----------------
+---first-section---
+-----------------*/
+
+
+.first-div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: black;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 90%;
+    height: 100%;
+}
+
+
+.banner-text-one {
+    color: white;
+}
+
+.banner-text-two {
+    color: white;
+}
+
+.first-p {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.watch {
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #DD0000;
+    font-weight: 1000;
+    padding: 10px 40px;
+}
+
+/*---------------------
+-----middle-section----
+---------------------*/
+.left-card a {
+    text-decoration: none;
+}
+
+.left-card :hover a {
+    color: #DD0000;
+}
+
+.left-card {
+    text-align: center;
+    justify-content: center;
+}
+
+.card-one {
+    border: 10px solid black;
+    border-radius: 5px;
+    height: 30px;
+    width: 200px;
+}
+
+.card-two {
+    border: 10px solid black;
+    border-radius: 5px;
+    height: 30px;
+    width: 200px;
+}
+
+.card-three {
+
+    border: 10px solid black;
+    border-radius: 5px;
+    height: 30px;
+    width: 200px;
+}
+
+/*-------------------
+----meddle-section---
+-------------------*/
+
+.check {
+    display: flex;
+    grid-gap: 10px;
+}
+
+.blog-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.blog-border {
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+/*---------------------
+-----footer---part-----
+---------------------*/
+
+
+footer {
+    background-color: black;
+}
+
+hr {
+    border: 2px solid white;
+}
+
+.goal {
+    text-align: center;
+    color: white;
+}
+
+.last-span {
+    text-align: center;
+    color: white;
+}
+
+.same {
+    margin-right: 30px;
+}
+
+.blog-match {
+    display: flex;
+    padding: 20px;
+}
+
+
+/*-------------------
+-----media quary-----
+-------------------*/
+@media only screen and (max-width:688px) {
+    .first-div {
+        width: 100%;
+    }
+
+    .left-card,
+    .middle-sec,
+    .blog-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .left-card,
+    .blog-container {
+        flex-direction: column;
+    }
+}
+
+/* Tablet devices */
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .first-div {
+        width: 100%;
+    }
+
+    .blog-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
